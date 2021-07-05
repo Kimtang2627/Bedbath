@@ -1,28 +1,40 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <Nav/>
+    <router-view/>
+   
+    
+  
+    
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
 
+import Nav from "./components/Nav.vue"
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    Nav
   }
 }
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200;300&display=swap');
+
+*{
+  padding: 0;
+  margin: 0 ; 
+  box-sizing: border-box;
+}
+#app{
+  font-family: 'Titillium Web', sans-serif;
+  width: 1300px;
+
+}
+
+.flex{
+  display: flex
 }
 </style>

@@ -4,6 +4,7 @@ import Home from "../views/Home.vue"
 import Gift from "../views/Gift.vue"
 import Bag from "../views/Bag.vue"
 import Signin from "../views/Signin.vue"
+import Beds from "../views/Beds.vue"
 
 Vue.use(VueRouter)
 
@@ -27,6 +28,11 @@ const routes = [
     path: '/bag',
     name: 'Bag',
     component: Bag
+  },
+  {
+    path: '/bed',
+    name: 'Bed',
+    component: Beds
   },
   // {
   //   path: '/about',

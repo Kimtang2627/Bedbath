@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <Nav/>
-    <router-view/>
+   
    
     
   
@@ -28,13 +28,22 @@ export default {
   margin: 0 ; 
   box-sizing: border-box;
 }
+
 #app{
   font-family: 'Titillium Web', sans-serif;
-  width: 1300px;
+  width: 100vw;
+  /* overflow:hidden; */
+  
+  
 
 }
 
 .flex{
   display: flex
+}
+
+.ma{
+  margin-right: auto;
+  margin-left: auto;
 }
 </style>
